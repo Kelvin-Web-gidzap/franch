@@ -46,7 +46,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 55,
+    "uniqCompNum": 56,
     "versionPublish": "5.9.0",
     "screenshot": "screenshot.png",
     "publishChangesOnly": true,
@@ -882,7 +882,7 @@
         {
           "_name": "tabs1",
           "_sourceTheme": "directm4",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"tabs1 directm4_tabs1 tabs\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" group=\"Tabs\" mbr-class=\"{'mbr-parallax-background':bg.parallax, 'mbr-fullscreen': fullScreen}\" plugins=\"mbr-tabs\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input name=\"fullScreen\" title=\"Full Screen\" type=\"checkbox\">\n\t\t<input name=\"fullWidth\" title=\"Full Width\" type=\"checkbox\">\n\t\t<input inline max=\"10\" min=\"0\" name=\"paddingTop\" step=\"1\" title=\"Top\" type=\"range\" value=\"6\">\n\t\t<input inline max=\"10\" min=\"0\" name=\"paddingBottom\" step=\"1\" title=\"Bottom\" type=\"range\" value=\"4\">\n\t\t<header>Show/Hide</header>\n\t\t<input name=\"showMainTitle\" title=\"Main Title\" type=\"checkbox\" checked>\n\t\t<input name=\"showMainSubtitle\" title=\"Main Subtitle\" type=\"checkbox\">\n\t\t<select name=\"bootstrapTabs\" title=\"Count\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\" selected>3</option>\n\t\t\t<option value=\"4\">4</option>\n\t\t\t<option value=\"5\">5</option>\n\t\t\t<option value=\"6\">6</option>\n\t\t</select>\n\n\t\t<input checked name=\"showTitle\" title=\"Title\" type=\"checkbox\">\n\t\t<input name=\"showSubitle\" title=\"Subtitle\" type=\"checkbox\">\n\t\t<input checked name=\"showText\" title=\"Text\" type=\"checkbox\">\n\t\t<input name=\"showList\" title=\"List\" type=\"checkbox\" checked>\n\t\t<input condition=\"showList\" max=\"8\" min=\"0\" name=\"listCount\" step=\"1\" title=\"List Count\" type=\"range\" value=\"3\">\n\t\t<input condition=\"showList\" name=\"listDotColor\" title=\"List Dot Color\" type=\"color\" value=\"#951a23\">\n\t\t<input name=\"showButtons\" title=\"Buttons\" type=\"checkbox\" checked>\n\t\t<input name=\"reverseContent\" title=\"Reverse\" type=\"checkbox\">\n\t\t<header>Tabs Colors</header>\n\t\t<input name=\"tabColor\" title=\"Tab\" type=\"color\" value=\"#74a3c7\">\n\t\t<input name=\"activeTabColor\" title=\"Active Tab\" type=\"color\" value=\"#55595c\">\n\t\t<input name=\"activeTabBorderColor\" title=\"Active Border\" type=\"color\" value=\"#951a23\">\n\t\t<header>Background</header>\n\t\t<fieldset name=\"bg\" parallax type=\"background\">\n\t\t\t<input title=\"Image\" type=\"image\" value=\"../_images/background8.jpg\">\n\t\t\t<input selected title=\"Color\" type=\"color\" value=\"#ffffff\">\n\t\t\t<input title=\"Video\" type=\"video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<input checked condition=\"bg.type !== 'color'\" name=\"overlay\" title=\"Overlay\" type=\"checkbox\">\n\t\t<input condition=\"overlay&&bg.type !== 'color'\" name=\"overlayColor\" title=\"Overlay Color\" type=\"color\" value=\"#ffffff\">\n\t\t<input condition=\"overlay&&bg.type !== 'color'\" inline max=\"1\" min=\"0\" name=\"overlayOpacity\" step=\"0.1\" title=\"Opacity\" type=\"range\" value=\"0.7\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<h3 class=\"mbr-section-title mbr-fonts-style align-center\" data-app-selector=\".mbr-section-title\" mbr-if=\"showMainTitle\" mbr-theme-style=\"display-5\"><b>Подробней о сотрудничестве</b></h3>\n\t\t<h4 class=\"mbr-section-subtitle mbr-fonts-style align-center\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showMainSubtitle\" mbr-theme-style=\"display-5\">\n\t\t\tSubtitle </h4>\n\t\t<div class=\"row mt-4\">\n\t\t\t<div class=\"col-12 col-md-12\">\n\t\t\t\t<ul class=\"nav nav-tabs\" role=\"tablist\">\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\" mbr-buttons mbr-theme-style=\"display-4\"><a aria-controls=\"#conference1-tab1-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style show active\" data-app-placeholder=\"Введите Текст\" data-toggle=\"tab\" href=\"#tabs1-10_tab0\" role=\"tab\" data-bs-toggle=\"tab\">Магазин MY CAR</a></li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\" mbr-buttons mbr-if=\"bootstrapTabs > 1\" mbr-theme-style=\"display-4\"><a aria-controls=\"#conference1-tab2-content\" aria-selected=\"false\" class=\"nav-link mbr-fonts-style\" data-app-placeholder=\"Введите Текст\" data-toggle=\"tab\" href=\"#tabs1-10_tab1\" role=\"tab\" data-bs-toggle=\"tab\">Управляющая компания</a></li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\" mbr-buttons mbr-if=\"bootstrapTabs > 2\" mbr-theme-style=\"display-4\"><a aria-controls=\"#conference1-tab3-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style active\" data-app-placeholder=\"Введите Текст\" data-toggle=\"tab\" href=\"#tabs1-10_tab2\" role=\"tab\" data-bs-toggle=\"tab\">Поставщики</a></li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\" mbr-buttons mbr-if=\"bootstrapTabs > 3\" mbr-theme-style=\"display-4\"><a aria-controls=\"#conference1-tab4-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style active\" data-app-placeholder=\"Введите Текст\" data-toggle=\"tab\" href=\"#tabs1-10_tab3\" role=\"tab\" data-bs-toggle=\"tab\">Пункт выдачи</a></li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\" mbr-buttons mbr-if=\"bootstrapTabs > 4\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t<a aria-controls=\"#conference1-tab5-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#conference1-tab5-content\" id=\"conference1-tab5\" role=\"tab\"> Withdraw </a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\" mbr-buttons mbr-if=\"bootstrapTabs > 5\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t<a aria-controls=\"#conference1-tab6-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#conference1-tab6-content\" id=\"conference1-tab6\" role=\"tab\"> Add Funds </a>\n\t\t\t\t\t</li>\n\t\t\t\t</ul>\n\t\t\t\t<div class=\"tab-content\">\n\t\t\t\t\t<div aria-labelledby=\"conference1-tab1\" id=\"conference1-tab1-content\" class=\"tab-pane active\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<img alt=\"Магазины Май Кар\" src=\"@PROJECT_PATH@/assets/images/98849423-1296x843.png\">\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .tab-content .tab-pane .list li\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\">MY CAR - сеть магазинов автозапчастей</h1>\n\t\t\t\t\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-subtitle, .tab-content .tab-pane .list li\" mbr-if=\"showSubitle\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\tOur advantages </h2>\n\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-text, .tab-content .tab-pane .mbr-section-btn, .tab-content .tab-pane .list li\" mbr-if=\"showText\" mbr-theme-style=\"display-4\">Для открытия ПВЗ понадобится:</p>\n\t\t\t\t\t\t\t\t<ul class=\"list mbr-fonts-style text-left\" data-app-selector=\".tab-content .tab-pane .list, .tab-content .tab-pane .list li\" data-multiline mbr-article mbr-if=\"showList\" mbr-list mbr-list-grow=\"listCount\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t<li>Помещение от 10 кв. м.</li><li>Статус юр. лица (ИП или ООО)</li><li>Заполнить <a href=\"popup:#mbr-popup-13\" class=\"text-primary\" data-toggle=\"modal\" data-bs-toggle=\"modal\" data-target=\"#mbr-popup-13\" data-bs-target=\"#mbr-popup-13\">анкету</a> на открытие</li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t<div class=\"buttons-wrap align-left align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t<div class=\"mbr-section-btn\" mbr-buttons mbr-if=\"showButtons\" mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-secondary\" data-app-placeholder=\"Введите Текст\" href=\"https://mobiri.se/\">Заполнить анкету</a></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div aria-labelledby=\"conference1-tab2\" id=\"conference1-tab2-content\" class=\"tab-pane\" mbr-if=\"bootstrapTabs > 1\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<img alt=\"Управляющая компания\" src=\"@PROJECT_PATH@/assets/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-10-16%20%D0%B2%2022.31.01-1058x1062.png\">\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .tab-content .tab-pane .list li\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\">Управляющая компания</h1>\n\t\t\t\t\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-subtitle, .tab-content .tab-pane .list li\" mbr-if=\"showSubitle\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\tOur advantages </h2>\n\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-text, .tab-content .tab-pane .mbr-section-btn, .tab-content .tab-pane .list li\" mbr-if=\"showText\" mbr-theme-style=\"display-4\">MY-CAR берет на себя следующие задачи:<br></p>\n\t\t\t\t\t\t\t\t<ul class=\"list mbr-fonts-style text-left\" data-app-selector=\".tab-content .tab-pane .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-list mbr-list-grow=\"listCount\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t<li>Поддержка и развитие партнеров</li><li>Подключение новых поставщиков в систему</li><li>Обучение и наставничество</li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t<div class=\"buttons-wrap align-left align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t<div class=\"mbr-section-btn\" mbr-buttons mbr-if=\"showButtons\" mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-primary\" data-app-placeholder=\"Введите Текст\" href=\"https://mobiri.se/\">Узнать подробней</a></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div aria-labelledby=\"conference1-tab3\" id=\"conference1-tab3-content\" class=\"tab-pane\" mbr-if=\"bootstrapTabs > 2\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<img alt=\"Поставщики MY CAR\" src=\"@PROJECT_PATH@/assets/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-10-05%20%D0%B2%2014.49.36-1296x914.png\">\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .tab-content .tab-pane .list li\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\">Оптовые склады контрактных автозапчастей</h1>\n\t\t\t\t\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-subtitle, .tab-content .tab-pane .list li\" mbr-if=\"showSubitle\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\tOur advantages </h2>\n\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-text, .tab-content .tab-pane .mbr-section-btn, .tab-content .tab-pane .list li\" mbr-if=\"showText\" mbr-theme-style=\"display-4\">Проверенные временем поставщики, предоставляют:</p>\n\t\t\t\t\t\t\t\t<ul class=\"list mbr-fonts-style text-left\" data-app-selector=\".tab-content .tab-pane .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-list mbr-list-grow=\"listCount\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t<li>Бесплатную доставку до транспортной компании</li>\n\t\t\t\t\t\t\t\t\t<li>Время на проверку 14-30 дней, с момента получения товара клиентом</li>\n\t\t\t\t\t\t\t\t\t<li>Легкий возврат товара</li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t<div class=\"buttons-wrap align-left align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t<div class=\"mbr-section-btn\" mbr-buttons mbr-if=\"showButtons\" mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-primary\" data-app-placeholder=\"Введите Текст\" href=\"https://mobiri.se/\">Узнать подробней</a></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div aria-labelledby=\"conference1-tab4\" id=\"conference1-tab4-content\" class=\"tab-pane\" mbr-if=\"bootstrapTabs > 3\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<img alt=\"Mobirise\" src=\"../_images/msg-box/mac2.png\">\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .tab-content .tab-pane .list li\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\">Пункт выдачи Gidzap</h1>\n\t\t\t\t\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-subtitle, .tab-content .tab-pane .list li\" mbr-if=\"showSubitle\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\tOur advantages </h2>\n\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-text, .tab-content .tab-pane .mbr-section-btn, .tab-content .tab-pane .list li\" mbr-if=\"showText\" mbr-theme-style=\"display-4\">В обязанности пункта выдачи Gidzap входит:</p>\n\t\t\t\t\t\t\t\t<ul class=\"list mbr-fonts-style text-left\" data-app-selector=\".tab-content .tab-pane .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-list mbr-list-grow=\"listCount\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t<li>Принимает отправления в виде упакованных заказов от курьера и отмечает поступление заказов в Личном Кабинете Gidzap.</li>\n\t\t\t\t\t\t\t\t\t<li><span style=\"font-size: 1.5rem;\">Выдает заказы получателю, оформляя операцию в Личном Кабинете Gidzap, при необходимости принимает оплату.</span></li><li>Перечисляет принятые от клиентов суммы за выданные заказы на наш расчетный счет.</li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t<div class=\"buttons-wrap align-left align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t<div class=\"mbr-section-btn\" mbr-buttons mbr-if=\"showButtons\" mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-secondary\" data-app-placeholder=\"Введите Текст\" href=\"https://mobiri.se/\">Get free Trial</a></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div aria-labelledby=\"conference1-tab5\" id=\"conference1-tab5-content\" class=\"tab-pane\" mbr-if=\"bootstrapTabs > 4\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<img alt=\"Mobirise\" src=\"../_images/msg-box/macbook1.png\">\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .tab-content .tab-pane .list li\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\">BOOST YOUR RANKING</h1>\n\t\t\t\t\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-subtitle, .tab-content .tab-pane .list li\" mbr-if=\"showSubitle\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\tOur advantages </h2>\n\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-text, .tab-content .tab-pane .mbr-section-btn, .tab-content .tab-pane .list li\" mbr-if=\"showText\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\tSites made with Mobirise are 100% mobile-friendly according the latest Google Test and Google loves those websites (officially)!</p>\n\t\t\t\t\t\t\t\t<ul class=\"list mbr-fonts-style text-left\" data-app-selector=\".tab-content .tab-pane .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-list mbr-list-grow=\"listCount\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t<li>Block with media and 'typed' text effect.</li>\n\t\t\t\t\t\t\t\t\t<li>Enter in any string, and watch it type at the speed you have set</li>\n\t\t\t\t\t\t\t\t\t<li>Lorem ipsum dolor sit amet, consectetur adipisic elit.</li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t<div class=\"buttons-wrap align-left align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t<div class=\"mbr-section-btn\" mbr-buttons mbr-if=\"showButtons\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md btn-primary\" data-app-placeholder=\"Type Text\" href=\"https://mobiri.se/\">Get free Trial</a>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div aria-labelledby=\"conference1-tab6\" id=\"conference1-tab6-content\" class=\"tab-pane\" mbr-if=\"bootstrapTabs > 5\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<img alt=\"Mobirise\" src=\"../_images/msg-box/macbook2.png\">\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .tab-content .tab-pane .list li\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\">BOOST YOUR RANKING</h1>\n\t\t\t\t\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-subtitle, .tab-content .tab-pane .list li\" mbr-if=\"showSubitle\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\tOur advantages </h2>\n\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-text, .tab-content .tab-pane .mbr-section-btn, .tab-content .tab-pane .list li\" mbr-if=\"showText\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\tSites made with Mobirise are 100% mobile-friendly according the latest Google Test and Google loves those websites (officially)!</p>\n\t\t\t\t\t\t\t\t<ul class=\"list mbr-fonts-style text-left\" data-app-selector=\".tab-content .tab-pane .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-list mbr-list-grow=\"listCount\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t<li>Block with media and 'typed' text effect.</li>\n\t\t\t\t\t\t\t\t\t<li>Enter in any string, and watch it type at the speed you have set</li>\n\t\t\t\t\t\t\t\t\t<li>Lorem ipsum dolor sit amet, consectetur adipisic elit.</li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t<div class=\"buttons-wrap align-left align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t<div class=\"mbr-section-btn\" mbr-buttons mbr-if=\"showButtons\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md btn-primary\" data-app-placeholder=\"Type Text\" href=\"https://mobiri.se/\">Get free Trial</a>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"tabs1 directm4_tabs1 tabs\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" group=\"Tabs\" mbr-class=\"{'mbr-parallax-background':bg.parallax, 'mbr-fullscreen': fullScreen}\" plugins=\"mbr-tabs\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input name=\"fullScreen\" title=\"Full Screen\" type=\"checkbox\">\n\t\t<input name=\"fullWidth\" title=\"Full Width\" type=\"checkbox\">\n\t\t<input inline max=\"10\" min=\"0\" name=\"paddingTop\" step=\"1\" title=\"Top\" type=\"range\" value=\"6\">\n\t\t<input inline max=\"10\" min=\"0\" name=\"paddingBottom\" step=\"1\" title=\"Bottom\" type=\"range\" value=\"4\">\n\t\t<header>Show/Hide</header>\n\t\t<input name=\"showMainTitle\" title=\"Main Title\" type=\"checkbox\" checked>\n\t\t<input name=\"showMainSubtitle\" title=\"Main Subtitle\" type=\"checkbox\">\n\t\t<select name=\"bootstrapTabs\" title=\"Count\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\" selected>3</option>\n\t\t\t<option value=\"4\">4</option>\n\t\t\t<option value=\"5\">5</option>\n\t\t\t<option value=\"6\">6</option>\n\t\t</select>\n\n\t\t<input checked name=\"showTitle\" title=\"Title\" type=\"checkbox\">\n\t\t<input name=\"showSubitle\" title=\"Subtitle\" type=\"checkbox\">\n\t\t<input checked name=\"showText\" title=\"Text\" type=\"checkbox\">\n\t\t<input name=\"showList\" title=\"List\" type=\"checkbox\" checked>\n\t\t<input condition=\"showList\" max=\"8\" min=\"0\" name=\"listCount\" step=\"1\" title=\"List Count\" type=\"range\" value=\"3\">\n\t\t<input condition=\"showList\" name=\"listDotColor\" title=\"List Dot Color\" type=\"color\" value=\"#951a23\">\n\t\t<input name=\"showButtons\" title=\"Buttons\" type=\"checkbox\" checked>\n\t\t<input name=\"reverseContent\" title=\"Reverse\" type=\"checkbox\">\n\t\t<header>Tabs Colors</header>\n\t\t<input name=\"tabColor\" title=\"Tab\" type=\"color\" value=\"#74a3c7\">\n\t\t<input name=\"activeTabColor\" title=\"Active Tab\" type=\"color\" value=\"#55595c\">\n\t\t<input name=\"activeTabBorderColor\" title=\"Active Border\" type=\"color\" value=\"#951a23\">\n\t\t<header>Background</header>\n\t\t<fieldset name=\"bg\" parallax type=\"background\">\n\t\t\t<input title=\"Image\" type=\"image\" value=\"../_images/background8.jpg\">\n\t\t\t<input selected title=\"Color\" type=\"color\" value=\"#ffffff\">\n\t\t\t<input title=\"Video\" type=\"video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<input checked condition=\"bg.type !== 'color'\" name=\"overlay\" title=\"Overlay\" type=\"checkbox\">\n\t\t<input condition=\"overlay&&bg.type !== 'color'\" name=\"overlayColor\" title=\"Overlay Color\" type=\"color\" value=\"#ffffff\">\n\t\t<input condition=\"overlay&&bg.type !== 'color'\" inline max=\"1\" min=\"0\" name=\"overlayOpacity\" step=\"0.1\" title=\"Opacity\" type=\"range\" value=\"0.7\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<h3 class=\"mbr-section-title mbr-fonts-style align-center\" data-app-selector=\".mbr-section-title\" mbr-if=\"showMainTitle\" mbr-theme-style=\"display-5\"><b>Подробней о сотрудничестве</b></h3>\n\t\t<h4 class=\"mbr-section-subtitle mbr-fonts-style align-center\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showMainSubtitle\" mbr-theme-style=\"display-5\">\n\t\t\tSubtitle </h4>\n\t\t<div class=\"row mt-4\">\n\t\t\t<div class=\"col-12 col-md-12\">\n\t\t\t\t<ul class=\"nav nav-tabs\" role=\"tablist\">\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\" mbr-buttons mbr-theme-style=\"display-4\"><a aria-controls=\"#conference1-tab1-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style show active\" data-app-placeholder=\"Введите Текст\" data-toggle=\"tab\" href=\"#tabs1-10_tab0\" role=\"tab\" data-bs-toggle=\"tab\">Магазин MY CAR</a></li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\" mbr-buttons mbr-if=\"bootstrapTabs > 1\" mbr-theme-style=\"display-4\"><a aria-controls=\"#conference1-tab2-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style active\" data-app-placeholder=\"Введите Текст\" data-toggle=\"tab\" href=\"#tabs1-10_tab1\" role=\"tab\" data-bs-toggle=\"tab\">Управляющая компания</a></li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\" mbr-buttons mbr-if=\"bootstrapTabs > 2\" mbr-theme-style=\"display-4\"><a aria-controls=\"#conference1-tab3-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style active\" data-app-placeholder=\"Введите Текст\" data-toggle=\"tab\" href=\"#tabs1-10_tab2\" role=\"tab\" data-bs-toggle=\"tab\">Поставщики</a></li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\" mbr-buttons mbr-if=\"bootstrapTabs > 3\" mbr-theme-style=\"display-4\"><a aria-controls=\"#conference1-tab4-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style active\" data-app-placeholder=\"Введите Текст\" data-toggle=\"tab\" href=\"#tabs1-10_tab3\" role=\"tab\" data-bs-toggle=\"tab\">Пункт выдачи</a></li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\" mbr-buttons mbr-if=\"bootstrapTabs > 4\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t<a aria-controls=\"#conference1-tab5-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#conference1-tab5-content\" id=\"conference1-tab5\" role=\"tab\"> Withdraw </a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\" mbr-buttons mbr-if=\"bootstrapTabs > 5\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t<a aria-controls=\"#conference1-tab6-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#conference1-tab6-content\" id=\"conference1-tab6\" role=\"tab\"> Add Funds </a>\n\t\t\t\t\t</li>\n\t\t\t\t</ul>\n\t\t\t\t<div class=\"tab-content\">\n\t\t\t\t\t<div aria-labelledby=\"conference1-tab1\" id=\"conference1-tab1-content\" class=\"tab-pane active\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<img alt=\"Магазины Май Кар\" src=\"@PROJECT_PATH@/assets/images/98849423-1296x843.png\">\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .tab-content .tab-pane .list li\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\">MY CAR - сеть магазинов автозапчастей</h1>\n\t\t\t\t\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-subtitle, .tab-content .tab-pane .list li\" mbr-if=\"showSubitle\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\tOur advantages </h2>\n\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-text, .tab-content .tab-pane .mbr-section-btn, .tab-content .tab-pane .list li\" mbr-if=\"showText\" mbr-theme-style=\"display-4\">Для открытия ПВЗ понадобится:</p>\n\t\t\t\t\t\t\t\t<ul class=\"list mbr-fonts-style text-left\" data-app-selector=\".tab-content .tab-pane .list, .tab-content .tab-pane .list li\" data-multiline mbr-article mbr-if=\"showList\" mbr-list mbr-list-grow=\"listCount\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t<li>Помещение от 10 кв. м.</li><li>Статус юр. лица (ИП или ООО)</li><li>Заполнить <a href=\"popup:#mbr-popup-13\" class=\"text-primary\" data-toggle=\"modal\" data-bs-toggle=\"modal\" data-target=\"#mbr-popup-13\" data-bs-target=\"#mbr-popup-13\">анкету</a> на открытие</li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t<div class=\"buttons-wrap align-left align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t<div class=\"mbr-section-btn\" mbr-buttons mbr-if=\"showButtons\" mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-secondary\" data-app-placeholder=\"Введите Текст\" href=\"popup:#mbr-popup-1j\" data-toggle=\"modal\" data-bs-toggle=\"modal\" data-target=\"#mbr-popup-1j\" data-bs-target=\"#mbr-popup-1j\">Заполнить анкету</a></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div aria-labelledby=\"conference1-tab2\" id=\"conference1-tab2-content\" class=\"tab-pane\" mbr-if=\"bootstrapTabs > 1\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<img alt=\"Управляющая компания\" src=\"@PROJECT_PATH@/assets/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-10-16%20%D0%B2%2022.31.01-1058x1062.png\">\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .tab-content .tab-pane .list li\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\">Управляющая компания</h1>\n\t\t\t\t\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-subtitle, .tab-content .tab-pane .list li\" mbr-if=\"showSubitle\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\tOur advantages </h2>\n\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-text, .tab-content .tab-pane .mbr-section-btn, .tab-content .tab-pane .list li\" mbr-if=\"showText\" mbr-theme-style=\"display-4\">MY-CAR берет на себя следующие задачи:<br></p>\n\t\t\t\t\t\t\t\t<ul class=\"list mbr-fonts-style text-left\" data-app-selector=\".tab-content .tab-pane .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-list mbr-list-grow=\"listCount\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t<li>Поддержка и развитие партнеров</li><li>Подключение новых поставщиков в систему</li><li>Обучение и наставничество</li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t<div class=\"buttons-wrap align-left align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t<div class=\"mbr-section-btn\" mbr-buttons mbr-if=\"showButtons\" mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-primary\" data-app-placeholder=\"Введите Текст\" href=\"popup:#mbr-popup-r\" data-toggle=\"modal\" data-bs-toggle=\"modal\" data-target=\"#mbr-popup-r\" data-bs-target=\"#mbr-popup-r\">Узнать подробней</a></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div aria-labelledby=\"conference1-tab3\" id=\"conference1-tab3-content\" class=\"tab-pane\" mbr-if=\"bootstrapTabs > 2\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<img alt=\"Поставщики MY CAR\" src=\"@PROJECT_PATH@/assets/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-10-05%20%D0%B2%2014.49.36-1296x914.png\">\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .tab-content .tab-pane .list li\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\">Оптовые склады контрактных автозапчастей</h1>\n\t\t\t\t\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-subtitle, .tab-content .tab-pane .list li\" mbr-if=\"showSubitle\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\tOur advantages </h2>\n\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-text, .tab-content .tab-pane .mbr-section-btn, .tab-content .tab-pane .list li\" mbr-if=\"showText\" mbr-theme-style=\"display-4\">Проверенные временем поставщики, предоставляют:</p>\n\t\t\t\t\t\t\t\t<ul class=\"list mbr-fonts-style text-left\" data-app-selector=\".tab-content .tab-pane .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-list mbr-list-grow=\"listCount\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t<li>Бесплатную доставку до транспортной компании</li>\n\t\t\t\t\t\t\t\t\t<li>Время на проверку 14-30 дней, с момента получения товара клиентом</li>\n\t\t\t\t\t\t\t\t\t<li>Легкий возврат товара</li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t<div class=\"buttons-wrap align-left align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t<div class=\"mbr-section-btn\" mbr-buttons mbr-if=\"showButtons\" mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-primary\" data-app-placeholder=\"Введите Текст\" href=\"popup:#mbr-popup-1j\" data-toggle=\"modal\" data-bs-toggle=\"modal\" data-target=\"#mbr-popup-1j\" data-bs-target=\"#mbr-popup-1j\">Узнать подробней</a></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div aria-labelledby=\"conference1-tab4\" id=\"conference1-tab4-content\" class=\"tab-pane\" mbr-if=\"bootstrapTabs > 3\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<img alt=\"Mobirise\" src=\"../_images/msg-box/mac2.png\">\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .tab-content .tab-pane .list li\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\">Пункт выдачи Gidzap</h1>\n\t\t\t\t\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-subtitle, .tab-content .tab-pane .list li\" mbr-if=\"showSubitle\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\tOur advantages </h2>\n\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-text, .tab-content .tab-pane .mbr-section-btn, .tab-content .tab-pane .list li\" mbr-if=\"showText\" mbr-theme-style=\"display-4\">В обязанности пункта выдачи Gidzap входит:</p>\n\t\t\t\t\t\t\t\t<ul class=\"list mbr-fonts-style text-left\" data-app-selector=\".tab-content .tab-pane .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-list mbr-list-grow=\"listCount\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t<li>Принимает отправления в виде упакованных заказов от курьера и отмечает поступление заказов в Личном Кабинете Gidzap.</li>\n\t\t\t\t\t\t\t\t\t<li><span style=\"font-size: 1.5rem;\">Выдает заказы получателю, оформляя операцию в Личном Кабинете Gidzap, при необходимости принимает оплату.</span></li><li>Перечисляет принятые от клиентов суммы за выданные заказы на наш расчетный счет.</li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t<div class=\"buttons-wrap align-left align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t<div class=\"mbr-section-btn\" mbr-buttons mbr-if=\"showButtons\" mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-secondary\" data-app-placeholder=\"Введите Текст\" href=\"https://mobiri.se/\">Get free Trial</a></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div aria-labelledby=\"conference1-tab5\" id=\"conference1-tab5-content\" class=\"tab-pane\" mbr-if=\"bootstrapTabs > 4\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<img alt=\"Mobirise\" src=\"../_images/msg-box/macbook1.png\">\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .tab-content .tab-pane .list li\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\">BOOST YOUR RANKING</h1>\n\t\t\t\t\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-subtitle, .tab-content .tab-pane .list li\" mbr-if=\"showSubitle\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\tOur advantages </h2>\n\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-text, .tab-content .tab-pane .mbr-section-btn, .tab-content .tab-pane .list li\" mbr-if=\"showText\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\tSites made with Mobirise are 100% mobile-friendly according the latest Google Test and Google loves those websites (officially)!</p>\n\t\t\t\t\t\t\t\t<ul class=\"list mbr-fonts-style text-left\" data-app-selector=\".tab-content .tab-pane .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-list mbr-list-grow=\"listCount\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t<li>Block with media and 'typed' text effect.</li>\n\t\t\t\t\t\t\t\t\t<li>Enter in any string, and watch it type at the speed you have set</li>\n\t\t\t\t\t\t\t\t\t<li>Lorem ipsum dolor sit amet, consectetur adipisic elit.</li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t<div class=\"buttons-wrap align-left align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t<div class=\"mbr-section-btn\" mbr-buttons mbr-if=\"showButtons\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md btn-primary\" data-app-placeholder=\"Type Text\" href=\"https://mobiri.se/\">Get free Trial</a>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div aria-labelledby=\"conference1-tab6\" id=\"conference1-tab6-content\" class=\"tab-pane\" mbr-if=\"bootstrapTabs > 5\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<img alt=\"Mobirise\" src=\"../_images/msg-box/macbook2.png\">\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .tab-content .tab-pane .list li\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\">BOOST YOUR RANKING</h1>\n\t\t\t\t\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-section-subtitle, .tab-content .tab-pane .list li\" mbr-if=\"showSubitle\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\tOur advantages </h2>\n\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-black align-left\" data-app-selector=\".tab-content .tab-pane .mbr-text, .tab-content .tab-pane .mbr-section-btn, .tab-content .tab-pane .list li\" mbr-if=\"showText\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\tSites made with Mobirise are 100% mobile-friendly according the latest Google Test and Google loves those websites (officially)!</p>\n\t\t\t\t\t\t\t\t<ul class=\"list mbr-fonts-style text-left\" data-app-selector=\".tab-content .tab-pane .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-list mbr-list-grow=\"listCount\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t<li>Block with media and 'typed' text effect.</li>\n\t\t\t\t\t\t\t\t\t<li>Enter in any string, and watch it type at the speed you have set</li>\n\t\t\t\t\t\t\t\t\t<li>Lorem ipsum dolor sit amet, consectetur adipisic elit.</li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t<div class=\"buttons-wrap align-left align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t<div class=\"mbr-section-btn\" mbr-buttons mbr-if=\"showButtons\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md btn-primary\" data-app-placeholder=\"Type Text\" href=\"https://mobiri.se/\">Get free Trial</a>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
           "_styles": {
             "& when not (@fullScreen)": {
               "padding-top": "(@paddingTop * 1rem)",
@@ -2933,6 +2933,330 @@
           "_cid": "usrxV7y4WX",
           "_anchor": "mbr-popup-13",
           "_popupId": "mbr-popup-13",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": "popup-builder",
+          "_isSecondary": true,
+          "typeCompatible": "!isAMP",
+          "_styles": {
+            "&.popup-builder": {
+              "background-color": "#ffffff",
+              ".modal": {
+                "position": "relative",
+                "display": "block",
+                "z-index": "1"
+              },
+              ".modal-dialog": {
+                "margin-top": "60px",
+                "margin-bottom": "60px",
+                "& when (@popupSize = '5')": {
+                  "margin-top": "0",
+                  "margin-bottom": "0",
+                  "margin": "0",
+                  "height": "100%"
+                }
+              }
+            },
+            ".modal-content, .modal-dialog": {
+              "height": "auto"
+            },
+            ".form-wrapper": {
+              ".input-group-btn": {
+                "margin-right": "auto",
+                "margin-left": "auto",
+                ".btn": {
+                  "margin": "0 !important"
+                }
+              },
+              "@media (min-width: 769px)": {
+                ".mbr-form": {
+                  ".form-group, .input-group-btn": {
+                    "padding": "0 .5rem"
+                  }
+                }
+              }
+            },
+            ".card-img": {
+              "width": "100%",
+              "margin": "auto",
+              "border-radius": "0"
+            },
+            ".mbr-figure": {
+              "img": {
+                "display": "block",
+                "width": "100%",
+                "-ms-flex-item-align": "center",
+                "-ms-grid-row-align": "center",
+                "-webkit-align-self": "center",
+                "align-self": "center"
+              }
+            },
+            ".mbr-text": {
+              "text-align": "center"
+            },
+            ".pt-0": {
+              "padding-top": "0 !important"
+            },
+            ".pb-0": {
+              "padding-bottom": "0 !important"
+            },
+            ".form-content": {
+              "-ms-flex-pack": "center",
+              "justify-content": "center",
+              "text-align": "center"
+            },
+            ".mbr-overlay": {
+              "bottom": "0",
+              "left": "0",
+              "position": "absolute",
+              "right": "0",
+              "top": "0",
+              "z-index": "0",
+              "pointer-events": "none"
+            },
+            ".modal-open": {
+              "overflow": "hidden"
+            },
+            ".modal-open .modal": {
+              "overflow-x": "hidden",
+              "overflow-y": "auto"
+            },
+            ".modal": {
+              "position": "fixed",
+              "top": "0",
+              "left": "0",
+              "z-index": "1050",
+              "display": "none",
+              "width": "100%",
+              "height": "100%",
+              "overflow": "hidden",
+              "outline": "0"
+            },
+            ".modal-dialog": {
+              "position": "relative",
+              "width": "auto",
+              "margin": ".5rem",
+              "pointer-events": "none",
+              "& when (@popupSize = '5')": {
+                "max-width": "100%",
+                "height": "100%",
+                "margin": "0"
+              }
+            },
+            ".modal.fade .modal-dialog": {
+              "transition": "transform 0.3s ease-out, -webkit-transform 0.3s ease-out",
+              "-webkit-transform": "translate(0, -50px)",
+              "transform": "translate(0, -50px)"
+            },
+            ".modal.show .modal-dialog": {
+              "-webkit-transform": "none",
+              "transform": "none"
+            },
+            ".modal-dialog-centered": {
+              "display": "flex",
+              "-ms-flex-align": "center",
+              "align-items": "center",
+              "min-height": "~\"calc(100% - (.5rem * 2))\""
+            },
+            ".modal-dialog-centered::before": {
+              "display": "block",
+              "height": "~\"calc(100vh - (.5rem * 2))\"",
+              "content": "\"\""
+            },
+            ".modal-content": {
+              "background": "@cardBg",
+              "position": "relative",
+              "display": "flex",
+              "-ms-flex-direction": "column",
+              "flex-direction": "column",
+              "width": "100%",
+              "pointer-events": "auto",
+              "background-clip": "padding-box",
+              "border": "none",
+              "outline": "0",
+              "-webkit-box-shadow": "0 10px 40px 0 rgba(0, 0, 0, 0.2)",
+              "box-shadow": "0 10px 40px 0 rgba(0, 0, 0, 0.2)",
+              "& when (@popupSize = '5')": {
+                "border-radius": "0",
+                "height": "100%",
+                "overflow": "auto"
+              }
+            },
+            ".margin-center-pos": {
+              "margin-top": "auto",
+              "margin-bottom": "auto"
+            },
+            ".modal-backdrop": {
+              "position": "fixed",
+              "top": "0",
+              "left": "0",
+              "z-index": "1040",
+              "width": "100vw",
+              "height": "100vh",
+              "background-color": "#000"
+            },
+            ".modal-backdrop.fade": {
+              "opacity": "0"
+            },
+            ".modal-backdrop.show": {
+              "opacity": ".5"
+            },
+            ".modal-header": {
+              "display": "flex",
+              "-ms-flex-align": "start",
+              "align-items": "flex-start",
+              "-ms-flex-pack": "justify",
+              "justify-content": "space-between",
+              "@media (min-width: 992px)": {
+                "padding": "2rem 2rem 1rem"
+              },
+              "@media (max-width: 991px)": {
+                "padding": "1rem"
+              },
+              "border-bottom": "none"
+            },
+            ".modal-header .close": {
+              "position": "absolute",
+              "top": "1rem",
+              "right": "1rem",
+              "margin": "-1rem -1rem -1rem auto",
+              "padding": "1rem",
+              "opacity": ".75",
+              "svg": {
+                "fill": "@closeButton"
+              },
+              "&:hover": {
+                "opacity": "1"
+              },
+              "&:focus": {
+                "outline": "none"
+              }
+            },
+            ".modal-title": {
+              "line-height": "1.5",
+              "width": "100%",
+              "margin": "0",
+              "text-align": "center"
+            },
+            ".modal-body": {
+              "position": "relative",
+              "-ms-flex": "1 1 auto",
+              "flex": "1 1 auto",
+              "@media (min-width: 992px)": {
+                "padding": "1rem 2rem 2rem"
+              },
+              "@media (max-width: 991px)": {
+                "padding": "1rem"
+              }
+            },
+            ".modal-footer": {
+              "display": "flex",
+              "-ms-flex-align": "center",
+              "align-items": "center",
+              "-ms-flex-pack": "center",
+              "justify-content": "center",
+              "@media (min-width: 992px)": {
+                "padding": "0rem 2rem 2rem"
+              },
+              "@media (max-width: 991px)": {
+                "padding": "1rem"
+              },
+              "border-top": "none",
+              "text-align": "center"
+            },
+            ".modal-scrollbar-measure": {
+              "position": "absolute",
+              "top": "-9999px",
+              "width": "50px",
+              "height": "50px",
+              "overflow": "scroll"
+            },
+            "@media (min-width: 576px)": {
+              ".modal-dialog": {
+                "& when not (@popupSize = '5')": {
+                  "max-width": "500px",
+                  "margin": "1.75rem auto"
+                }
+              },
+              ".modal-dialog-centered": {
+                "min-height": "~\"calc(100% - (1.75rem * 2))\""
+              },
+              ".modal-dialog-centered::before": {
+                "height": "~\"calc(100vh - (1.75rem * 2))\""
+              },
+              ".modal-sm": {
+                "max-width": "300px"
+              }
+            },
+            "@media (min-width: 992px)": {
+              ".modal-lg, .modal-xl": {
+                "max-width": "800px"
+              }
+            },
+            "@media (min-width: 1200px)": {
+              ".modal-xl": {
+                "max-width": "1140px"
+              }
+            },
+            ".row": {
+              "display": "flex",
+              "-ms-flex-wrap": "wrap",
+              "flex-wrap": "wrap",
+              "margin-right": "-15px",
+              "margin-left": "-15px"
+            },
+            ".col-md-4": {
+              "position": "relative",
+              "width": "100%",
+              "padding-right": "15px",
+              "padding-left": "15px",
+              "-ms-flex": "0 0 33.333333%",
+              "flex": "0 0 33.333333%",
+              "max-width": "33.333333%"
+            },
+            ".form-group": {
+              "margin-bottom": "1rem"
+            },
+            ".form-control": {
+              "display": "block",
+              "width": "100%",
+              "font-size": "1rem",
+              "font-weight": "400",
+              "line-height": "1.5"
+            },
+            ".col": {
+              "-ms-flex-preferred-size": "0",
+              "flex-basis": "0",
+              "-ms-flex-positive": "1",
+              "flex-grow": "1",
+              "max-width": "100%"
+            },
+            ".col-md-auto": {
+              "position": "relative",
+              "padding-right": "15px",
+              "padding-left": "15px",
+              "-ms-flex": "0 0 auto",
+              "flex": "0 0 auto",
+              "width": "auto",
+              "max-width": "100%"
+            },
+            ".mbr-section-btn": {
+              "margin": "0",
+              ".btn": {
+                "margin": "0"
+              }
+            }
+          },
+          "_name": "mbr-popup",
+          "_sourceTheme": "cyberm5",
+          "_customHTML": "<section class=\"popup-builder\" group=\"Popup\" plugins=\"formstyler, datepicker\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Triggers / Show Popup</header>\n        <label>On Click</label>\n        <label>Use [popup-id] with any link or button (Link -&gt; Popup tab)</label>\n        <input type=\"checkbox\" title=\"On Timer\" name=\"onTimer\">\n        <input type=\"range\" title=\"Delay (s)\" name=\"onTimerDelay\" min=\"0\" max=\"30\" step=\"1\" value=\"5\" condition=\"onTimer == true\">\n\n        <input type=\"checkbox\" title=\"On Page Exit\" name=\"onPageExit\">\n\n        <input type=\"checkbox\" title=\"On Scroll to End\" name=\"onScroll\">\n\n        <select title=\"Add to Pages:\" name=\"popupOnPages\" multiple condition=\"onTimer == true || onPageExit == true || onScroll == true\"></select>\n\n        <header>Content</header>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n\n        <select title=\"Content Type\" name=\"popupContentType\">\n            <option value=\"1\">None</option>\n            <option value=\"2\">Image</option>\n            <option value=\"3\">Video</option>\n            <option value=\"4\" selected>Form</option>\n        </select>\n\n        <select title=\"Size\" name=\"popupSize\">\n            <option value=\"1\">Small</option>\n            <option value=\"2\" selected>Default</option>\n            <option value=\"3\">Large</option>\n            <option value=\"4\">Extra large</option>\n            <option value=\"5\">Full Screen</option>\n        </select>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <input type=\"color\" title=\"Background Color\" name=\"cardBg\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Close Button\" name=\"closeButton\" value=\"#353535\">\n\n        <header>Overlay</header>\n        <input type=\"color\" title=\"Color\" name=\"popupOverlayColor\" value=\"#000000\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\">\n        <!-- End block parameters -->\n    <input type=\"hidden\" name=\"usedRecaptcha\" value=\"false\"></mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': popupOverlayColor, 'top': 0, 'right': 0, 'bottom': 0, 'left': 0, 'position': absolute, 'z-index': 0, 'pointer-events': none}\">\n    </div>\n\n    <div class=\"modal mbr-popup\" tabindex=\"-1\" role=\"dialog\" data-overlay-color=\"{{popupOverlayColor}}\" data-overlay-opacity=\"{{overlayOpacity}}\" data-on-timer-delay=\"{{onTimer ? onTimerDelay : ''}}\" data-on-exit=\"{{onPageExit}}\" data-on-scroll=\"{{onScroll}}\">\n        <div class=\"modal-dialog\" role=\"document\" mbr-class=\"{\n            'modal-sm': popupSize == 1,\n            '': popupSize == 2,\n            'modal-lg': popupSize == 3,\n            'modal-xl': popupSize == 4\n            }\">\n            <div class=\"modal-content\">\n                <div class=\"container position-static margin-center-pos\">\n                    <div class=\"modal-header\" mbr-class=\"{'pb-0': showTitle && showText}\">\n                        <h5 class=\"modal-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".modal-title\" mbr-if=\"showTitle\">Анкета на открытие ПВЗ</h5>\n                        <button type=\"button\" class=\"close d-flex\" data-dismiss=\"modal\" data-bs-dismiss=\"modal\" aria-label=\"Close\">\n                            <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"23\" height=\"23\" viewBox=\"0 0 23 23\" fill=\"currentColor\">\n                                <path d=\"M13.4 12l10.3 10.3-1.4 1.4L12 13.4 1.7 23.7.3 22.3 10.6 12 .3 1.7 1.7.3 12 10.6 22.3.3l1.4 1.4L13.4 12z\">\n                                </path>\n                            </svg>\n                        </button>\n                    </div>\n\n                    <div class=\"modal-body\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" mbr-if=\"showText\">\n                            Заполните форму</p>\n\n                        <div mbr-if=\"popupContentType !== 1\">\n                            <div class=\"card-img mbr-figure\" mbr-if=\"popupContentType == 2\">\n                                <img src=\"../_images/popup.jpg\" alt=\"Mobirise\">\n                            </div>\n                            <div mbr-video class=\"video-block mbr-figure\" mbr-if=\"popupContentType == 3\">\n                                <iframe src=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\"></iframe>\n                            </div>\n\n                            <div mbr-form mbr-if=\"popupContentType == 4\" class=\"form-wrapper\">\n<!--Formbuilder Form-->\n<form action name=\"Mobirise Form\" method=\"POST\" class=\"mbr-form form-with-styler\">\n<div class>\n<div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\"> Thanks for filling out the form!</div>\n<div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\"> </div>\n</div>\n<div class=\"dragArea row\">\n<div class=\"col-lg-12 col-md-12 col-sm-12 form-group\" data-for=\"Имя\">\n<input type=\"text\" name=\"Имя\" placeholder=\"Имя\" data-form-field=\"Имя\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\" value>\n</div>\n<div class=\"col-lg-12 col-md-12 col-sm-12 form-group\" data-for=\"Телефон\">\n<input type=\"text\" name=\"Телефон\" placeholder=\"Телефон\" data-form-field=\"Телефон\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\" value>\n</div>\n<div data-for=\"Город\" class=\"col-lg-12 col-md-12 col-sm-12 form-group\">\n<input type=\"text\" name=\"Город\" placeholder=\"Город\" data-form-field=\"Город\" mbr-theme-style=\"display-7\" class=\"form-control\" required=\"required\" value>\n</div>\n<div data-for=\"Помещение\" class=\"col-lg-12 col-md-12 col-sm-12 form-group\">\n<div class=\"form-control-label\">\n<label mbr-text mbr-theme-style=\"display-7\" for=\"Помещение\" class=\"mbr-fonts-style\">Помещение</label>\n</div>\n<div class=\"form-check ms-2\">\n<input type=\"radio\" name=\"Помещение\" data-form-field=\"Помещение\" mbr-theme-style=\"display-7\" class=\"form-check-input\" value=\"Есть\" checked>\n<label mbr-text mbr-theme-style=\"display-7\" class=\"form-check-label\">Есть</label>\n</div>\n<div class=\"form-check ms-2\">\n<input type=\"radio\" name=\"Помещение\" data-form-field=\"Помещение\" mbr-theme-style=\"display-7\" class=\"form-check-input\" value=\"Нет\">\n<label mbr-text mbr-theme-style=\"display-7\" class=\"form-check-label\">Нет</label>\n</div>\n</div>\n<div data-for=\"Опыт в продажах автозапчастей\" class=\"col-lg-12 col-md-12 col-sm-12 form-group\">\n<div class=\"form-control-label\">\n<label mbr-text mbr-theme-style=\"display-7\" for=\"Опыт в продажах автозапчастей\" class=\"mbr-fonts-style\">Опыт в продажах автозапчастей</label>\n</div>\n<div class=\"form-check ms-2\">\n<input type=\"radio\" name=\"Опыт в продажах автозапчастей\" data-form-field=\"Опыт в продажах автозапчастей\" mbr-theme-style=\"display-7\" class=\"form-check-input\" value=\"Есть\" checked>\n<label mbr-text mbr-theme-style=\"display-7\" class=\"form-check-label\">Есть</label>\n</div>\n<div class=\"form-check ms-2\">\n<input type=\"radio\" name=\"Опыт в продажах автозапчастей\" data-form-field=\"Опыт в продажах автозапчастей\" mbr-theme-style=\"display-7\" class=\"form-check-input\" value=\"Нет\">\n<label mbr-text mbr-theme-style=\"display-7\" class=\"form-check-label\">Нет</label>\n</div>\n<div class=\"form-check ms-2\">\n<input type=\"radio\" name=\"Опыт в продажах автозапчастей\" data-form-field=\"Опыт в продажах автозапчастей\" mbr-theme-style=\"display-7\" class=\"form-check-input\" value=\"Немного\">\n<label mbr-text mbr-theme-style=\"display-7\" class=\"form-check-label\">Немного</label>\n</div>\n</div>\n<div class=\"col-lg-12 col-md-12 col-sm-12 form-group\" data-for=\"Форма занятости\">\n<div class=\"form-control-label\">\n<label mbr-text mbr-theme-style=\"display-7\" for=\"Форма занятости\" class=\"mbr-fonts-style\">Форма занятости</label>\n</div>\n<div class=\"form-check ms-2\">\n<input type=\"radio\" name=\"Форма занятости\" data-form-field=\"Форма занятости\" mbr-theme-style=\"display-7\" class=\"form-check-input\" value=\"ИП\" checked>\n<label mbr-text mbr-theme-style=\"display-7\" class=\"form-check-label\">ИП</label>\n</div>\n<div class=\"form-check ms-2\">\n<input type=\"radio\" name=\"Форма занятости\" data-form-field=\"Форма занятости\" mbr-theme-style=\"display-7\" class=\"form-check-input\" value=\"ООО\">\n<label mbr-text mbr-theme-style=\"display-7\" class=\"form-check-label\">ООО</label>\n</div>\n<div class=\"form-check ms-2\">\n<input type=\"radio\" name=\"Форма занятости\" data-form-field=\"Форма занятости\" mbr-theme-style=\"display-7\" class=\"form-check-input\" value=\"Самозанятость\">\n<label mbr-text mbr-theme-style=\"display-7\" class=\"form-check-label\">Самозанятость</label>\n</div>\n<div class=\"form-check ms-2\">\n<input type=\"radio\" name=\"Форма занятости\" data-form-field=\"Форма занятости\" mbr-theme-style=\"display-7\" class=\"form-check-input\" value=\"Физ. Лицо\">\n<label mbr-text mbr-theme-style=\"display-7\" class=\"form-check-label\">Физ. Лицо</label>\n</div>\n</div>\n<div mbr-buttons=\"true\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove,-mbrLink,-mbrBtnRemove,-mbrBtnAdd\" class=\"col-md-auto input-group-btn\">\n<a data-toolbar=\"-mbrBtnMove,-mbrLink,-mbrBtnRemove,-mbrBtnAdd\" type=\"submit\" class=\"w-100 w-100 btn btn-primary\">ОТПРАВИТЬ</a>\n</div>\n</div>\n</form><!--Formbuilder Form-->\n</div>\n                        </div>\n                    </div>\n\n                    <div class=\"modal-footer\" mbr-class=\"{'pt-0': popupContentType == 1 || popupContentType == 4}\" mbr-if=\"showButtons\">\n                        <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                            <a class=\"btn btn-md btn-primary\" href=\"https://mobiri.se\">\n                                LEARN MORE\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "utrtgNuDwk",
+          "_anchor": "mbr-popup-1j",
+          "_popupId": "mbr-popup-1j",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
